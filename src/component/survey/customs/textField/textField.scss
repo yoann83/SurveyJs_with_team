@@ -1,0 +1,35 @@
+$blue_egerie: #274058;
+$orange_egerie: #e94e1b;
+$white_egerie: #fff;
+$success_egerie: #198754;
+$error_egerie: #FFBABB;
+$field_egerie : #f5f5f5;
+.fieldcustom{
+  [aria-label]{
+    span {
+     color: green;
+    }
+  }
+  .textfieldcustom{
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.19em;
+    padding: 0.25em 0 0.25em 0.87em;
+    border: none;
+    color: $blue_egerie;
+    background-color: $white_egerie;
+    border-bottom: 0.07em solid $blue_egerie;
+    font-size: 1em;
+      &:focus {
+        border-bottom: 1px solid $blue_egerie;
+        outline: none;
+        color: $white_egerie;
+        background-color: $blue_egerie;
+      }
+    }
+    [role="alert"]{
+      span{
+        color: blue;
+      }
+  }
+}
